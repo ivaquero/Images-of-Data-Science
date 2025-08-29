@@ -19,7 +19,7 @@ y = [categorical(p, k=np.random.randint(0, len(p) - 1)) for _ in range(n_trials)
 μ, σ = np.mean(y), np.std(y)
 
 _, ax = plt.subplots()
-ax.scatter(x, y, label=f"$μ={μ:.2f},\ σ={σ:.2f}$")
+ax.scatter(x, y, label=rf"$μ={μ:.2f},\ σ={σ:.2f}$")
 ax.legend()
 
 filename, extension = path.splitext(path.basename(__file__))
